@@ -9,11 +9,11 @@ def url():
 return get_url
 
 def proceso():
-response = requests.get(get_url)
-result = response.json(strict=False)
-df = pd.DataFrame(result["data"])
-df.columns = result["headers"]
-df.to_excel("combustibles_vehicular_estaciones.xlsx", index = False)
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("combustibles_vehicular_estaciones.xlsx", index = False)
 
 if __name__ == '__main__':
     proceso();

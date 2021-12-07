@@ -1,38 +1,19 @@
-import pandas as pd
-import time
 import requests
+import json
+import pandas as pd
 
-def descarga():
-    salida = []
-    for i in range(1,4):
-        try:
-            url = f"https://www.infolobby.cl/DatosAbiertos/Catalogos/VirtuosoLobby/Datasets/2021/{i}/activos/csv"
-            dfOut = pd.read_csv(url)
-            salida.append(dfOut.copy())
-        except:
-            print(url)
-    dfFinal = pd.concat(salida)
-    return dfFinal
+def url():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/bencina-en-linea/v1/combustibles/vehicular/estaciones.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+return get_url
 
-def lecturaCsv():
-    df2 = pd.read_csv(r"csvConsolidados/activos_consolidado.csv")
-    return df2
-
-def extraccionAños():
-    df2 = lecturaCsv();
-    dfFinal = descarga();
-
-    df2 = df2[df2["anio"] != 2021]
-    dfUpdate = dfFinal[dfFinal["anio"]==2021]
-    return df2, dfUpdate
-
-def concatenacion():
-    df2,dfUpdate = extraccionAños();
-
-    dfConsolidado = pd.concat([df2, dfUpdate])
-    with pd.ExcelWriter('InfoLobby/activos_consolidado.xlsx',options={'strings_to_urls': False}) as writer:
-        dfConsolidado.to_excel(writer, index = False)
-
+def proceso():
+response = requests.get(get_url)
+result = response.json(strict=False)
+df = pd.DataFrame(result["data"])
+df.columns = result["headers"]
+df.to_excel("combustibles_vehicular_estaciones.xlsx", index = False)
 
 if __name__ == '__main__':
-    concatenacion();
+    proceso();

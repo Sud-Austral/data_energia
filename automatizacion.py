@@ -9,7 +9,7 @@ def url():
     return get_url
 
 def proceso():
-    response = requests.get(get_url)
+    response = requests.get(url())
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]

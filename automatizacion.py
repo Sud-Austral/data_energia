@@ -1,6 +1,7 @@
 import requests
 import json
 import pandas as pd
+import sys
 
 def proceso():
     api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
@@ -80,10 +81,66 @@ def proceso7():
     df.to_excel("combustibles_vehicular_estaciones_gnc.xlsx", index = False)
 
 if __name__ == '__main__':
-    proceso();
-    proceso2();
-    proceso3();
-    proceso4();
-    proceso5();
-    proceso6();
-    proceso7();
+    try:
+        proceso();
+    except:
+        try:
+            proceso();
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+        
+    try:
+        proceso2();
+    except:
+        try:
+            proceso2
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso3();
+    except:
+        try:
+            proceso3
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso4();
+    except:
+        try:
+            proceso4
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+    try:
+        proceso5();
+    except:
+        try:
+            proceso5
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+    
+    try:
+        proceso6();
+    except:
+        try:
+            proceso6
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+            
+    try:
+        proceso7();
+    except:
+        try:
+            proceso7
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+    
+

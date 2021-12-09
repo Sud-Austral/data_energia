@@ -22,7 +22,7 @@ def proceso2():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("combustibles_vehicular_estaciones.xlsx", index = False)
+    df.to_excel("combustibles_vehicular_estaciones_diesel.xlsx", index = False)
 
 if __name__ == '__main__':
     proceso();

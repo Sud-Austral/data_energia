@@ -7,7 +7,7 @@ def url():
     url = 'https://api.desarrolladores.energiaabierta.cl/bencina-en-linea/v1/combustibles/vehicular/estaciones.json/'
     url2 = 'https://api.desarrolladores.energiaabierta.cl/bencina-en-linea/v1/combustibles/vehicular/estaciones/diesel.json'
     get_url = f"{url}?auth_key={api_auth}&limit=5000"
-    get_url2 = f"{url}?auth_key={api_auth}&limit=5000"
+    get_url2 = f"{url2}?auth_key={api_auth}&limit=5000"
     return get_url, get_url2
 
 def proceso():

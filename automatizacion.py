@@ -7,7 +7,7 @@ def proceso():
     url = 'https://api.desarrolladores.energiaabierta.cl/bencina-en-linea/v1/combustibles/vehicular/estaciones.json/'
     get_url = f"{url}?auth_key={api_auth}&limit=5000"
 
-    response = requests.get_url
+    response = requests.get(get_url)
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]

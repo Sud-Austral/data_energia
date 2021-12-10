@@ -224,6 +224,184 @@ def proceso20():
     df.columns = result["headers"]
     df.to_excel("indicadores-diarios_v1_wti.xlsx", index = False)
 
+def proceso21():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/atacama.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_atacama.xlsx", index = False)
+
+def proceso22():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/cardones.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_cardones.xlsx", index = False)
+
+def proceso23():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/charrua.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_charrua.xlsx", index = False)
+
+def proceso24():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/crucero.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_crucero.xlsx", index = False)
+
+def proceso25():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/pandeazucar.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_pandeazucar.xlsx", index = False)
+
+def proceso26():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/puertomontt.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_puertomontt.xlsx", index = False)
+
+def proceso27():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/quillota.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_quillota.xlsx", index = False)
+
+def proceso28():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/diarios/tarapaca.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_diarios_tarapaca.xlsx", index = False)
+
+def proceso29():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/atacama.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_atacama.xlsx", index = False)
+
+def proceso30():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/cardones.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales/v1/horarios/cardones.xlsx", index = False)
+
+def proceso31():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/charrua.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_charrua.xlsx", index = False)
+
+def proceso32():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/crucero.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_crucero.xlsx", index = False)
+
+def proceso33():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/pandeazucar.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_pandeazucar.xlsx", index = False)
+
+def proceso34():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/puertomontt.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_puertomontt.xlsx", index = False)
+
+def proceso35():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/quillota.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_quillota.xlsx", index = False)
+
+def proceso36():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/costos-marginales/v1/horarios/tarapaca.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("costos-marginales_v1_horarios_tarapaca.xlsx", index = False)
+
+
+
 if __name__ == '__main__':
     try:
         proceso();
@@ -400,6 +578,159 @@ if __name__ == '__main__':
     except:
         try:
             proceso19
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso20();
+    except:
+        try:
+            proceso20
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso21();
+    except:
+        try:
+            proceso21
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso22();
+    except:
+        try:
+            proceso22
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso23();
+    except:
+        try:
+            proceso23
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso24();
+    except:
+        try:
+            proceso24
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso25();
+    except:
+        try:
+            proceso25
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso26();
+    except:
+        try:
+            proceso26
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso27();
+    except:
+        try:
+            proceso27
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso28();
+    except:
+        try:
+            proceso28
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso29();
+    except:
+        try:
+            proceso29
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso30();
+    except:
+        try:
+            proceso30
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso31();
+    except:
+        try:
+            proceso31
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso32();
+    except:
+        try:
+            proceso32
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso33();
+    except:
+        try:
+            proceso33
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso34();
+    except:
+        try:
+            proceso34
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso35();
+    except:
+        try:
+            proceso35
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso36();
+    except:
+        try:
+            proceso36
         except:
             error = sys.exc_info()[1]
             print(error)

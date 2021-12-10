@@ -100,7 +100,7 @@ def proceso9():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("capacidad-instalada_convencional.xlsx", index = False)
+    df.to_excel("capacidad-instalada_v1_convencional.xlsx", index = False)
 
 def proceso10():
     api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
@@ -111,7 +111,7 @@ def proceso10():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("capacidad-instalada_enoperacion.xlsx", index = False)
+    df.to_excel("capacidad-instalada_v1_enoperacion.xlsx", index = False)
 
 def proceso11():
     api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
@@ -122,7 +122,7 @@ def proceso11():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("capacidad-instalada_enpruebas.xlsx", index = False)
+    df.to_excel("capacidad-instalada_v1_enpruebas.xlsx", index = False)
 
 def proceso12():
     api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
@@ -133,7 +133,7 @@ def proceso12():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("capacidad-instalada_ernc.xlsx", index = False)
+    df.to_excel("capacidad-instalada_v1_ernc.xlsx", index = False)
 
 def proceso13():
     api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
@@ -144,7 +144,85 @@ def proceso13():
     result = response.json(strict=False)
     df = pd.DataFrame(result["data"])
     df.columns = result["headers"]
-    df.to_excel("capacidad-instalada_sistemas.xlsx", index = False)
+    df.to_excel("capacidad-instalada_v1_sistemas.xlsx", index = False)
+
+
+def proceso14():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/brent.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_brent.xlsx", index = False)
+
+def proceso15():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/dolar.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_dolar.xlsx", index = False)
+
+def proceso16():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/euro.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_euro.xlsx", index = False)
+
+def proceso17():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/henryhub.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_henryhub.xlsx", index = False)
+
+def proceso18():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/uf.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_uf.xlsx", index = False)
+
+def proceso19():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/utm.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_utm.xlsx", index = False)
+
+def proceso20():
+    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    url = 'https://api.desarrolladores.energiaabierta.cl/indicadores-diarios/v1/wti.json/'
+    get_url = f"{url}?auth_key={api_auth}&limit=5000"
+
+    response = requests.get(get_url)
+    result = response.json(strict=False)
+    df = pd.DataFrame(result["data"])
+    df.columns = result["headers"]
+    df.to_excel("indicadores-diarios_v1_wti.xlsx", index = False)
 
 if __name__ == '__main__':
     try:
@@ -262,5 +340,66 @@ if __name__ == '__main__':
         except:
             error = sys.exc_info()[1]
             print(error)
-    
 
+    try:
+        proceso14();
+    except:
+        try:
+            proceso14
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso15();
+    except:
+        try:
+            proceso15
+        except:
+            error = sys.exc_info()[1]
+            print(error) 
+    
+    try:
+        proceso16();
+    except:
+        try:
+            proceso16
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso17();
+    except:
+        try:
+            proceso17
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso18();
+    except:
+        try:
+            proceso18
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+
+    try:
+        proceso18();
+    except:
+        try:
+            proceso18
+        except:
+            error = sys.exc_info()[1]
+            print(error)
+    
+    try:
+        proceso19();
+    except:
+        try:
+            proceso19
+        except:
+            error = sys.exc_info()[1]
+            print(error)

@@ -505,9 +505,8 @@ def proceso45():
     get_url = f"{url}?auth_key={api_auth}&limit=5000"
 
     response = requests.get(get_url)
-    result = response.ajson(strict=False)
-    df = pd.DataFrame(result["data"])
-    df.columns = result["headers"]
+    result = response.json(strict=False)
+    df = pd.DataFrame({"anios": result["result"][0]})
     df.to_excel("importacion-y-exportacion_v1_anios.xlsx", index = False)
 
 def proceso46():

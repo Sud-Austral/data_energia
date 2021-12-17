@@ -29,8 +29,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
-        python automatizacion.py
+        
         python automatizacionMapa.py
 
     - uses: stefanzweifel/git-auto-commit-action@v2

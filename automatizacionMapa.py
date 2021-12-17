@@ -89,7 +89,7 @@ def upgradePoints(dfAux):
 def establecimientos():
     df = pd.read_excel('combustibles_vehicular_estaciones.xlsx')
     
-    df = df.head(50)
+    # df = df.head(50)
 
     df = df[df['ID'] != 'pb520101']
     df = df[df['ID'] != 'pb520102']

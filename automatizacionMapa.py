@@ -36,7 +36,7 @@ def getTramos(df, variable):
 
 def clear(texto):
     
-    finalText = texto.replace("'", "").replace("´", "").replace("´", "").replace("’", "")
+    finalText = texto.replace("'", "").replace("´", "").replace("´", "").replace("’", "").replace(",", "").replace(";", "").replace("\\", "").replace("/", "").replace("[", "").replace("]", "").replace("{", "").replace("}", "")
     return finalText
 
 def upgradePoints(dfAux):

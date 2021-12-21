@@ -3014,7 +3014,7 @@ regiones14 = {
             },
             "properties": {
                 "CUT_REG": "14",
-                "REGION": "Los R\u00edos",
+                "REGION": "Los R u00edos",
                 "SUPERFICIE": 18324.18
             }
         }

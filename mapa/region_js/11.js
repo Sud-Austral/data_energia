@@ -68326,7 +68326,7 @@ regiones11 = {
             },
             "properties": {
                 "CUT_REG": "11",
-                "REGION": "Ays\u00e9n del General Carlos Ib\u00e1\u00f1ez del Campo",
+                "REGION": "Ays u00e9n del General Carlos Ib u00e1 u00f1ez del Campo",
                 "SUPERFICIE": 106796.55
             }
         }

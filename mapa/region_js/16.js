@@ -2844,7 +2844,7 @@ regiones16 = {
             },
             "properties": {
                 "CUT_REG": "16",
-                "REGION": "\u00d1uble",
+                "REGION": " u00d1uble",
                 "SUPERFICIE": 13096.62
             }
         }

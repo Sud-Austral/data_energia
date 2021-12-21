@@ -5170,7 +5170,7 @@ regiones8 = {
             },
             "properties": {
                 "CUT_REG": "08",
-                "REGION": "Biob\u00edo",
+                "REGION": "Biob u00edo",
                 "SUPERFICIE": 23996.18
             }
         }

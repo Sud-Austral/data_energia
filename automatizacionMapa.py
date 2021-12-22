@@ -64,7 +64,7 @@ def getTramos(df, variable):
     
     return
 
-def clasificacion():
+def clasificacionTabla():
     
     clasificacion = ['Gasolina 93 $/L', 'Gasolina 97 $/L', 'Petróleo Diesel $/L', 'Gasolina 95 $/L', 'GLP Vehicular $/m3', 'GNC $/m3']
 
@@ -158,7 +158,7 @@ def createFile(df):
 
 def descargaFinal():
     descarga()
-    clasificacion()
+    clasificacionTabla()
 
 if __name__ == '__main__':
     descargaFinal()

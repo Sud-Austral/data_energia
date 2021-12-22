@@ -2656,7 +2656,7 @@ regiones1 = {
             },
             "properties": {
                 "CUT_REG": "01",
-                "REGION": "Tarapac\u00e1",
+                "REGION": "Tarapacá",
                 "SUPERFICIE": 42288.81
             }
         }

@@ -24,7 +24,7 @@ def string_to_float(cadena):
     except:
         return None
 
-def clearFloat():
+def clearFloat(df):
     clasificacion = ['Gasolina 93 $/L', 'Gasolina 97 $/L', 'Petróleo Diesel $/L', 'Gasolina 95 $/L', 'GLP Vehicular $/m3', 'GNC $/m3']
     
     for i in clasificacion:
@@ -72,6 +72,7 @@ def clasificacion():
 
         getTramos(df, i)
     
+    clearFloat(df)
     createFile(df)
 
 
@@ -157,7 +158,6 @@ def createFile(df):
 
 def descargaFinal():
     descarga()
-    clearFloat()
     clasificacion()
 
 if __name__ == '__main__':

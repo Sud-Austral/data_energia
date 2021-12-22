@@ -1,4 +1,4 @@
-regiones = {
+regiones7 = {
     "type": "FeatureCollection",
     "features": [
         {

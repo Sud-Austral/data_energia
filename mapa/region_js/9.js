@@ -1,4 +1,4 @@
-regiones9 = {
+regiones = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -3888,7 +3888,7 @@ regiones9 = {
             },
             "properties": {
                 "CUT_REG": "09",
-                "REGION": "La Araucan u00eda",
+                "REGION": "La Araucan\u00eda",
                 "SUPERFICIE": 31811.89
             }
         }

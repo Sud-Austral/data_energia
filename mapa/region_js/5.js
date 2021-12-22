@@ -1,4 +1,4 @@
-regiones5 = {
+regiones = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -3468,7 +3468,7 @@ regiones5 = {
             },
             "properties": {
                 "CUT_REG": "05",
-                "REGION": "Valpara u00edso",
+                "REGION": "Valpara\u00edso",
                 "SUPERFICIE": 16240.5
             }
         }

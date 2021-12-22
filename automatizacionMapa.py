@@ -156,7 +156,7 @@ def createFile(df):
 
     jsonFinal = {"type": "FeatureCollection", "features": salida}
 
-    with open('chile/combustibles.json', 'w', encoding='utf8') as myfile:
+    with open('mapa/chile/combustibles.json', 'w', encoding='utf8') as myfile:
         json.dump(jsonFinal, myfile, ensure_ascii=False)
     
     print("Estaciones de combustible creado correctamente.")

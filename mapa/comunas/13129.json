@@ -1,0 +1,69 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.62304918821135,
+                            -33.47492625843759
+                        ],
+                        [
+                            -70.62510826338648,
+                            -33.46960997602059
+                        ],
+                        [
+                            -70.64197311774954,
+                            -33.47645186493649
+                        ],
+                        [
+                            -70.63656416289619,
+                            -33.51876370034188
+                        ],
+                        [
+                            -70.61126854862474,
+                            -33.51304772294442
+                        ],
+                        [
+                            -70.61384213028559,
+                            -33.50815088930692
+                        ],
+                        [
+                            -70.62304918821135,
+                            -33.47492625843759
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 286,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13129",
+                "NOM_COMUNA": "SAN JOAQU\u00cdN",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 45831,
+                "T_MUJ_U": 48661,
+                "T_POB_U": 94492,
+                "T_HOM": 45831,
+                "T_MUJ": 48661,
+                "T_POB": 94492,
+                "T_VIV_U": 30096,
+                "T_VIV_R": 0,
+                "T_VIV": 30096,
+                "Shape_Leng": 0.13386462,
+                "Shape__Are": 14196855.207,
+                "Shape__Len": 16866.6670189,
+                "SUPERFICIE": 9.9422617,
+                "Densidad_": 9504.07519531
+            }
+        }
+    ]
+}

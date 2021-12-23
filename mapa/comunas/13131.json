@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.63667796506965,
+                            -33.51877165847131
+                        ],
+                        [
+                            -70.64462686416803,
+                            -33.51735830312128
+                        ],
+                        [
+                            -70.65351994563063,
+                            -33.54876824136096
+                        ],
+                        [
+                            -70.6548740481236,
+                            -33.554985257831405
+                        ],
+                        [
+                            -70.63114556013667,
+                            -33.558084875356336
+                        ],
+                        [
+                            -70.63667796506965,
+                            -33.51877165847131
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 276,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13131",
+                "NOM_COMUNA": "SAN RAM\u00d3N",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 40873,
+                "T_MUJ_U": 42027,
+                "T_POB_U": 82900,
+                "T_HOM": 40873,
+                "T_MUJ": 42027,
+                "T_POB": 82900,
+                "T_VIV_U": 23855,
+                "T_VIV_R": 0,
+                "T_VIV": 23855,
+                "Shape_Leng": 0.11076507,
+                "Shape__Are": 8935112.58789,
+                "Shape__Len": 14023.8274707,
+                "SUPERFICIE": 6.27711153,
+                "Densidad_": 13206.7109375
+            }
+        }
+    ]
+}

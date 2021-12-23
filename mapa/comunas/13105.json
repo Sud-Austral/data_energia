@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.65351994563063,
+                            -33.54876824136096
+                        ],
+                        [
+                            -70.68520504834594,
+                            -33.53912717991498
+                        ],
+                        [
+                            -70.70116494977326,
+                            -33.573692483357334
+                        ],
+                        [
+                            -70.66330314794533,
+                            -33.58524672088977
+                        ],
+                        [
+                            -70.6548740481236,
+                            -33.554985257831405
+                        ],
+                        [
+                            -70.65351994563063,
+                            -33.54876824136096
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 318,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13105",
+                "NOM_COMUNA": "EL BOSQUE",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 79372,
+                "T_MUJ_U": 83133,
+                "T_POB_U": 162505,
+                "T_HOM": 79372,
+                "T_MUJ": 83133,
+                "T_POB": 162505,
+                "T_VIV_U": 47941,
+                "T_VIV_R": 0,
+                "T_VIV": 47941,
+                "Shape_Leng": 0.15100976,
+                "Shape__Are": 20556192.9648,
+                "Shape__Len": 18499.7131182,
+                "SUPERFICIE": 14.32440186,
+                "Densidad_": 11344.6269531
+            }
+        }
+    ]
+}

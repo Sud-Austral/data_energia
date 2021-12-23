@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.65351994563063,
+                            -33.54876824136096
+                        ],
+                        [
+                            -70.64462686416803,
+                            -33.51735830312128
+                        ],
+                        [
+                            -70.67098938594285,
+                            -33.51078227311893
+                        ],
+                        [
+                            -70.68530239158675,
+                            -33.53909355637863
+                        ],
+                        [
+                            -70.68520504834594,
+                            -33.53912717991498
+                        ],
+                        [
+                            -70.65351994563063,
+                            -33.54876824136096
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 279,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13109",
+                "NOM_COMUNA": "LA CISTERNA",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 43147,
+                "T_MUJ_U": 46972,
+                "T_POB_U": 90119,
+                "T_HOM": 43147,
+                "T_MUJ": 46972,
+                "T_POB": 90119,
+                "T_VIV_U": 31480,
+                "T_VIV_R": 0,
+                "T_VIV": 31480,
+                "Shape_Leng": 0.12494343,
+                "Shape__Are": 14552391.0684,
+                "Shape__Len": 15270.0703902,
+                "SUPERFICIE": 9.97913933,
+                "Densidad_": 9030.73925781
+            }
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.67141546227201,
+                            -33.4264405834794
+                        ],
+                        [
+                            -70.70473563804327,
+                            -33.40785992080411
+                        ],
+                        [
+                            -70.7225700737369,
+                            -33.41167749280122
+                        ],
+                        [
+                            -70.72154205969207,
+                            -33.43661214227015
+                        ],
+                        [
+                            -70.70715074431159,
+                            -33.448822236335594
+                        ],
+                        [
+                            -70.69183370335273,
+                            -33.444476750324036
+                        ],
+                        [
+                            -70.67141546227201,
+                            -33.4264405834794
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 297,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13126",
+                "NOM_COMUNA": "QUINTA NORMAL",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 53669,
+                "T_MUJ_U": 56357,
+                "T_POB_U": 110026,
+                "T_HOM": 53669,
+                "T_MUJ": 56357,
+                "T_POB": 110026,
+                "T_VIV_U": 38989,
+                "T_VIV_R": 0,
+                "T_VIV": 38989,
+                "Shape_Leng": 0.17384108,
+                "Shape__Are": 16872413.3672,
+                "Shape__Len": 20954.3838998,
+                "SUPERFICIE": 11.8173008,
+                "Densidad_": 9310.5859375
+            }
+        }
+    ]
+}

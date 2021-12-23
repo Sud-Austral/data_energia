@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.68967681511789,
+                            -33.365869242168
+                        ],
+                        [
+                            -70.69355528866214,
+                            -33.38133779030136
+                        ],
+                        [
+                            -70.68192380444698,
+                            -33.403045916328374
+                        ],
+                        [
+                            -70.65818097575485,
+                            -33.4005449092587
+                        ],
+                        [
+                            -70.65686327299719,
+                            -33.376128199377135
+                        ],
+                        [
+                            -70.68967681511789,
+                            -33.365869242168
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 304,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13104",
+                "NOM_COMUNA": "CONCHAL\u00cd",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 61877,
+                "T_MUJ_U": 65078,
+                "T_POB_U": 126955,
+                "T_HOM": 61877,
+                "T_MUJ": 65078,
+                "T_POB": 126955,
+                "T_VIV_U": 37759,
+                "T_VIV_R": 0,
+                "T_VIV": 37759,
+                "Shape_Leng": 0.13793497,
+                "Shape__Are": 15905959.1211,
+                "Shape__Len": 16776.2038814,
+                "SUPERFICIE": 11.10976315,
+                "Densidad_": 11427.3359375
+            }
+        }
+    ]
+}

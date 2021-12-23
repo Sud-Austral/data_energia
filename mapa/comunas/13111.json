@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.61224496613461,
+                            -33.5556703504954
+                        ],
+                        [
+                            -70.61126854862474,
+                            -33.51304772294442
+                        ],
+                        [
+                            -70.63656416289619,
+                            -33.51876370034188
+                        ],
+                        [
+                            -70.63667796506965,
+                            -33.51877165847131
+                        ],
+                        [
+                            -70.63114556013667,
+                            -33.558084875356336
+                        ],
+                        [
+                            -70.61224496613461,
+                            -33.5556703504954
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 301,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13111",
+                "NOM_COMUNA": "LA GRANJA",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 57025,
+                "T_MUJ_U": 59546,
+                "T_POB_U": 116571,
+                "T_HOM": 57025,
+                "T_MUJ": 59546,
+                "T_POB": 116571,
+                "T_VIV_U": 34423,
+                "T_VIV_R": 0,
+                "T_VIV": 34423,
+                "Shape_Leng": 0.1351985,
+                "Shape__Are": 14638991.1699,
+                "Shape__Len": 16953.2650451,
+                "SUPERFICIE": 10.08919907,
+                "Densidad_": 11554.0390625
+            }
+        }
+    ]
+}

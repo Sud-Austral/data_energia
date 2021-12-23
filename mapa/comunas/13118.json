@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.58999768057525,
+                            -33.51032181348624
+                        ],
+                        [
+                            -70.5765765555831,
+                            -33.46950600591386
+                        ],
+                        [
+                            -70.62304918821135,
+                            -33.47492625843759
+                        ],
+                        [
+                            -70.61384213028559,
+                            -33.50815088930692
+                        ],
+                        [
+                            -70.58999768057525,
+                            -33.51032181348624
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 300,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13118",
+                "NOM_COMUNA": "MACUL",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 55161,
+                "T_MUJ_U": 61373,
+                "T_POB_U": 116534,
+                "T_HOM": 55161,
+                "T_MUJ": 61373,
+                "T_POB": 116534,
+                "T_VIV_U": 43121,
+                "T_VIV_R": 0,
+                "T_VIV": 43121,
+                "Shape_Leng": 0.14963388,
+                "Shape__Are": 18520195.4336,
+                "Shape__Len": 18281.424598,
+                "SUPERFICIE": 12.84227562,
+                "Densidad_": 9074.24902344
+            }
+        }
+    ]
+}

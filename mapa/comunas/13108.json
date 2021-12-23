@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.65818097575485,
+                            -33.4005449092587
+                        ],
+                        [
+                            -70.68192380444698,
+                            -33.403045916328374
+                        ],
+                        [
+                            -70.67131371099809,
+                            -33.426097423904935
+                        ],
+                        [
+                            -70.65166293839383,
+                            -33.4319176243463
+                        ],
+                        [
+                            -70.65818097575485,
+                            -33.4005449092587
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "OBJECTID": 291,
+                "REGION": "13",
+                "NOM_REGION": "REGI\u00d3N METROPOLITANA DE SANTIAGO",
+                "PROVINCIA": "131",
+                "NOM_PROVIN": "SANTIAGO",
+                "COMUNA": "13108",
+                "NOM_COMUNA": "INDEPENDENCIA",
+                "T_HOM_R": 0,
+                "T_MUJ_R": 0,
+                "T_POB_R": 0,
+                "T_HOM_U": 49186,
+                "T_MUJ_U": 51095,
+                "T_POB_U": 100281,
+                "T_HOM": 49186,
+                "T_MUJ": 51095,
+                "T_POB": 100281,
+                "T_VIV_U": 36666,
+                "T_VIV_R": 0,
+                "T_VIV": 36666,
+                "Shape_Leng": 0.1114921,
+                "Shape__Are": 10657655.7441,
+                "Shape__Len": 13645.157183,
+                "SUPERFICIE": 7.35546017,
+                "Densidad_": 13633.5458984
+            }
+        }
+    ]
+}

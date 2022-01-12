@@ -172,7 +172,7 @@ def historico(df):
     dfToday = df
     
     dfToday = dfToday[dfToday['Última Actualización'] > str(hoy) + ' 00:00:00']
-    dfToday.to_excel('historico/' + str(hoy) + '.xlsx', index=False)
+    dfToday.to_csv('historico/' + str(hoy) + '.csv', index=False)
 
 
 if __name__ == '__main__':

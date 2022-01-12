@@ -167,7 +167,7 @@ def createFile(df):
 
 def historico(df):
 
-    dfToday.to_csv('historico/' + str(hoy) + '.csv', index=False)
+    df.to_csv('historico/' + str(hoy) + '.csv', index=False)
 
 
 if __name__ == '__main__':

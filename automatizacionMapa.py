@@ -166,7 +166,7 @@ def createFile(df):
     print("Histórico creado correctamente.")
 
 def historico(df):
-
+    hoy = str(datetime.datetime.today())[0:10]
     df.to_csv('historico/' + str(hoy) + '.csv', index=False)
 
 

@@ -2,6 +2,7 @@ import pandas as pd
 import codecs
 import json
 import requests
+import datetime
 
 
 def descarga():
@@ -160,6 +161,18 @@ def createFile(df):
         json.dump(jsonFinal, myfile, ensure_ascii=False)
     
     print("Estaciones de combustible creado correctamente.")
+    historico(df)
+    
+    print("Histórico creado correctamente.")
+
+def historico(df):
+
+    hoy = str(datetime.datetime.today())[0:10]
+    
+    dfToday = df
+    
+    dfToday = dfToday[dfToday['Última Actualización'] > str(hoy) + ' 00:00:00']
+    dfToday.to_excel('historico/' + str(hoy) + '.xlsx', index=False)
 
 
 if __name__ == '__main__':

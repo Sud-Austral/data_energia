@@ -167,11 +167,6 @@ def createFile(df):
 
 def historico(df):
 
-    hoy = str(datetime.datetime.today())[0:10]
-    
-    dfToday = df
-    
-    dfToday = dfToday[dfToday['Última Actualización'] > str(hoy) + ' 00:00:00']
     dfToday.to_csv('historico/' + str(hoy) + '.csv', index=False)
 
 

@@ -6,7 +6,7 @@ import datetime
 
 
 def descarga():
-    api_auth = "1594882b82550b038f365b0c6a7976682bdd0192"
+    api_auth = "CN6AFll3WdvYyBu0oRUKplZgbT9V3P0OU2f9m4Mi"
     url = 'https://api.desarrolladores.energiaabierta.cl/bencina-en-linea/v1/combustibles/vehicular/estaciones.json/'
     get_url = f"{url}?auth_key={api_auth}&limit=5000"
 
@@ -113,6 +113,7 @@ def createFile(df):
         filasJSON['classGLP'] = filasJSON['ClasificacionGLP Vehicular $/m3']
         filasJSON['classGNC'] = filasJSON['ClasificacionGNC $/m3']
         filasJSON['classD'] = filasJSON['ClasificacionPetróleo Diesel $/L']
+        filasJSON['ID_COM'] = int(filasJSON['ID Comuna'])
 
         del filasJSON['Razón Social']
         del filasJSON['Calle']

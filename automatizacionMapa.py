@@ -136,7 +136,7 @@ def createFile(df):
         del filasJSON['ClasificacionPetróleo Diesel $/L']
 
         del filasJSON['ID']
-        del filasJSON['ID Comuna']
+        # del filasJSON['ID Comuna']
         del filasJSON['ID Región']
         del filasJSON['Distribuidor Logo']
         del filasJSON['Distribuidor Logo SVG Horizontal']

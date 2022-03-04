@@ -126,8 +126,16 @@ def createFile(df):
     
 def historico(df):
     hoy = str(datetime.datetime.today())[0:10]
+
+    df['fecha'] = str(hoy)
     df.to_csv('historico_kerosene/' + str(hoy) + '.csv', index=False)
-    df.to_csv('historico_kerosene/kerosene_historico.csv', index=False)
+
+    dfH = pd.read_csv('historico_kerosene/kerosene_historico.csv')
+
+    frames = [df, dfH]
+    result = pd.concat(frames)
+
+    result.to_csv('historico_kerosene/kerosene_historico.csv', index=False)
     
     print("Histórico creado correctamente.")
 

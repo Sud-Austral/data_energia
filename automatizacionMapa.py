@@ -11,7 +11,7 @@ def descarga():
     get_url = f"{url}?auth_key={api_auth}&limit=5000"
 
     response = requests.get(get_url)
-    decoded_data=codecs.decode(response.content, 'utf-8-sig')
+    decoded_data=codecs.decode(response.content, 'latin-1')
     d = json.loads(decoded_data, strict=False)
 
     result = d

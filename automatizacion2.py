@@ -2,6 +2,7 @@ import requests as req
 import json
 import pandas as pd
 import sys
+import datetime
 
 #BENCINA EN LÍNEA:
 
@@ -21,6 +22,13 @@ def proceso():
            'tarjetas_grandes_tiendas':'Tarjeta Grandes Tiendas', 'tienda':'Tienda', 'farmacia':'Farmacia', 
             'mantencion':'Mantención', 'autoservicio':'Autoservicio', 'latitud':'Latitud', 'longitud':'Longitud'}
     df.rename(columns = newNames , inplace = True)
+    df['ClasificacionGasolina 93 $/L'] = "" 
+    df['ClasificacionGasolina 97 $/L'] = ""
+    df['ClasificacionPetróleo Diesel $/L']= "" 
+    df['ClasificacionGasolina 95 $/L']= ""
+    df['ClasificacionGLP Vehicular $/m3']= "" 
+    df['ClasificacionGNC $/m3']= ""
+    df['Fecha'] = datetime.datetime.now()
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
     df = pd.concat([df,ref])
     df.to_csv("avance.csv", index=False)

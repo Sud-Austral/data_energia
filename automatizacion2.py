@@ -28,7 +28,7 @@ def proceso():
     df['ClasificacionGasolina 95 $/L']= ""
     df['ClasificacionGLP Vehicular $/m3']= "" 
     df['ClasificacionGNC $/m3']= ""
-    df['Fecha'] = datetime.datetime.now()
+    df['Fecha'] = str(str(datetime.datetime.today())[0:10])
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
     df = pd.concat([df,ref])
     df.to_csv("avance.csv", index=False)

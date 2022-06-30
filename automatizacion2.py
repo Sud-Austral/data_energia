@@ -10,7 +10,7 @@ def proceso():
     file = req.get(url, allow_redirects=True)
     open('data.csv', 'wb').write(file.content)
     df = pd.read_csv("data.csv", sep=";")
-    df.rename(columns = {'ID':'id'}, inplace = True)
+    df.rename(columns = {'id':'ID'}, inplace = True)
     df.to_csv("avance.csv", index=False)
     return
     

@@ -37,6 +37,35 @@ def proceso():
     df.to_csv("historico/historico_combustibles.csv" , index=False)
 
     return
+
+def proceso2():
+    url = 'https://3b9x.short.gy/lsVb5c'
+    file = req.get(url, allow_redirects=True)
+    open('data.csv', 'wb').write(file.content)
+    df = pd.read_csv("data.csv", sep=";")
+    newNames = {'fecha_actualizacion':'fecha_hora_actualizacion','calle':"direccion_calle", 
+                'numero':"direccion_numero",'comuna':"nombre_comuna",  
+                'region':'nombre_region', 'distribuidor':'distribuidor.nombre', 
+                'distribuidor_logo':'distribuidor.logo', 'distribuidor_logo_svg':'distribuidor.logo_svg',
+                'distribuidor_logo_svg_horizontal':'distribuidor.logo_horizontal_svg', 
+                'kerosene':'precios.kerosene', 'pago_efectivo':'metodos_de_pago.efectivo','cheque':'metodos_de_pago.cheque', 
+                'tarjetas_bancarias':'metodos_de_pago.tarjetas bancarias', 
+                'tarjetas_grandes_tiendas':'metodos_de_pago.tarjetas grandes tiendas', 'tienda':'servicios.tienda', 
+                'farmacia':'servicios.farmacia', 
+                'mantencion':'servicios.mantencion', 'autoservicio':'servicios.autoservicio',
+                'latitud':'ubicacion.latitud', 'longitud':'ubicacion.longitud'}
+    df.rename(columns = newNames , inplace = True)
+    df['Clasificacionprecios.kerosene'] = "" 
+    hoy = str(str(datetime.datetime.today())[0:10])
+    df['fecha'] = hoy
+
+    df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
+    ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico.csv")
+    df = pd.concat([df,ref])
+    #df.to_csv("avance.csv", index=False)
+    df.to_csv("historico_kerosene/kerosene_historico.csv" , index=False)
+
+    return
     
 
 

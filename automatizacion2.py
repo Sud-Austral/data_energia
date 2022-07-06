@@ -75,4 +75,5 @@ def proceso2():
 
 if __name__ == '__main__':
     proceso()
+    proceso2()
     

@@ -30,11 +30,11 @@ def proceso():
     df['ClasificacionGNC $/m3']= ""
     hoy = str(str(datetime.datetime.today())[0:10])
     df['Fecha'] = hoy
-    df.to_csv(f"data_energia/main/historico/{hoy}.csv" , index=False)
+    df.to_csv(f"historico/{hoy}.csv" , index=False)
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
     df = pd.concat([df,ref])
     df.to_csv("avance.csv", index=False)
-    df.to_csv("data_energia/main/historico/historico_combustibles.csv" , index=False)
+    df.to_csv("historico/historico_combustibles.csv" , index=False)
 
     return
     

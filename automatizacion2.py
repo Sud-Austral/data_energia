@@ -6,6 +6,13 @@ import datetime
 
 #BENCINA EN LÍNEA:
 
+def changeToNumber(number):
+    try:
+        number = number.replace(",",".")
+        return float(number)
+    except:
+        return number
+
 def proceso():
     url = 'https://3b9x.short.gy/xAW5bI'
     file = req.get(url, allow_redirects=True)
@@ -30,6 +37,8 @@ def proceso():
     df['ClasificacionGNC $/m3']= ""
     hoy = str(str(datetime.datetime.today())[0:10])
     df['Fecha'] = hoy
+    df["Latitud"] = df["Latitud"].apply(changeToNumber)
+    df["Longitud"] = df["Longitud"].apply(changeToNumber)
     df.to_csv(f"historico/{hoy}.csv" , index=False)
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
     df = pd.concat([df,ref])
@@ -58,7 +67,8 @@ def proceso2():
     df['Clasificacionprecios.kerosene'] = "" 
     hoy = str(str(datetime.datetime.today())[0:10])
     df['fecha'] = hoy
-
+    df["Latitud"] = df["Latitud"].apply(changeToNumber)
+    df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico.csv")
     df = pd.concat([df,ref])

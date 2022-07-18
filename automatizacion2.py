@@ -67,7 +67,7 @@ def proceso2():
     df['Clasificacionprecios.kerosene'] = "" 
     hoy = str(str(datetime.datetime.today())[0:10])
     df['fecha'] = hoy
-    df["Latitud"] = df["Latitud"].apply(changeToNumber)
+    df["ubicacion.longitud"] = df["ubicacion.longitud"].apply(changeToNumber)
     df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico.csv")

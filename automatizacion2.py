@@ -41,8 +41,8 @@ def proceso():
     df["Latitud"] = df["Latitud"].apply(changeToNumber)
     df["Longitud"] = df["Longitud"].apply(changeToNumber)
     df.to_csv(f"historico/{hoy}.csv" , index=False)
-    ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
-    ##df = pd.concat([df,ref])
+    ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2.csv")
+    df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
 
@@ -71,8 +71,8 @@ def proceso2():
     df["ubicacion.longitud"] = df["ubicacion.longitud"].apply(changeToNumber)
     df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
-    ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico.csv")
-    ##df = pd.concat([df,ref])
+    ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
+    df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)
 

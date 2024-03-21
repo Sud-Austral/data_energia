@@ -15,7 +15,7 @@ def changeToNumber(number):
 
 def proceso():
     url = 'https://3b9x.short.gy/xAW5bI'
-    
+
     file = req.get(url, allow_redirects=True)
     open('data.csv', 'wb').write(file.content)
     df = pd.read_csv("data.csv", sep=";")
@@ -43,7 +43,7 @@ def proceso():
     df.to_csv(f"historico/{hoy}.csv" , index=False)
     ref = pd.read_csv("https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles.csv")
     df = pd.concat([df,ref])
-    df.to_csv("avance.csv", index=False)
+    #df.to_csv("avance.csv", index=False)
     df.to_csv("historico/historico_combustibles.csv" , index=False)
 
     return

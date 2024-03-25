@@ -46,8 +46,9 @@ def proceso():
         ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_{anio}.csv")
         df = pd.concat([df,ref])
     except:
-        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_.csv")
-        df = pd.concat([df,ref])
+        print("ERROR")
+        #ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_.csv")
+        #df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
     df.to_csv(f"historico/historico_combustibles_{anio}.csv" , index=False)
@@ -82,8 +83,9 @@ def proceso2():
         ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico_{anio}.csv")
         df = pd.concat([df,ref])
     except:
-        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
-        df = pd.concat([df,ref])
+        print("ERROR")
+        #ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
+        #df = pd.concat([df,ref])
 
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)

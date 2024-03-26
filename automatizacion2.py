@@ -104,7 +104,7 @@ def consolidar_anual():
     combustible_array = []
     kerosene_array = []
     fecha_inicio = datetime.date(int(datetime.datetime.now().strftime("%Y")), 1, 1)
-    fecha_fin    = datetime.datetime.now()
+    fecha_fin    = datetime.date.today()
 
     # Generar un ciclo que recorra cada mes
     fecha_actual = fecha_inicio

@@ -9,7 +9,7 @@ import datetime
 def changeToNumber(number):
     try:
         number = number.replace(",",".")
-        return round(float(number),7)
+        return round(float(number),6)
     except:
         return number
 

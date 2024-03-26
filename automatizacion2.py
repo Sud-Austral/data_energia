@@ -50,7 +50,7 @@ def proceso():
         ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2.csv")
         df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
-    df = df.drop_duplicates()
+    df = df.fillna("").drop_duplicates()
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
     df.to_csv(f"historico/historico_combustibles_{anio}.csv" , index=False)
     df.to_excel("historico/historico_combustibles2.xlsx" , index=False)
@@ -83,7 +83,7 @@ def proceso2():
     df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
     try:
-        ref = pd.read_xlsx(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico_{anio}.xlsx")
+        ref = pd.read_excel(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico_{anio}.xlsx")
         df = pd.concat([df,ref])
     except:
         print("ERROR")
@@ -91,7 +91,7 @@ def proceso2():
         df = pd.concat([df,ref])
 
     #df.to_csv("avance.csv", index=False)
-    df = df.drop_duplicates()
+    df = df.fillna("").drop_duplicates()
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)
     df.to_csv(f"historico_kerosene/kerosene_historico_{anio}.csv" , index=False)
     df.to_excel("historico_kerosene/kerosene_historico2.xlsx" , index=False)

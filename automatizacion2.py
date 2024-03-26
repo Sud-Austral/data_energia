@@ -50,6 +50,8 @@ def proceso():
         ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2.csv")
         df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
+    df["Latitud"] = df["Latitud"].apply(changeToNumber)
+    df["Longitud"] = df["Longitud"].apply(changeToNumber)
     df = df.fillna("").drop_duplicates()
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
     df.to_csv(f"historico/historico_combustibles_{anio}.csv" , index=False)
@@ -89,7 +91,8 @@ def proceso2():
         print("ERROR")
         ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
         df = pd.concat([df,ref])
-
+    df["Latitud"] = df["Latitud"].apply(changeToNumber)
+    df["Longitud"] = df["Longitud"].apply(changeToNumber)
     #df.to_csv("avance.csv", index=False)
     df = df.fillna("").drop_duplicates()
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)

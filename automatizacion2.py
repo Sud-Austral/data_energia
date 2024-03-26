@@ -112,9 +112,9 @@ def consolidar_anual():
         fecha = fecha_actual.strftime("%Y-%m")
         try:
             df_c = pd.read_excel(f"historico/historico_combustibles_{fecha}.xlsx")
-            df_k = pd.read_excel(f"historico/kerosene_historico_{fecha}.xlsx")
-            #combustible_array.append(df_c.copy())
-            #kerosene_array.append(df_k.copy())
+            df_k = pd.read_excel(f"historico_kerosene/kerosene_historico_{fecha}.xlsx")
+            combustible_array.append(df_c.copy())
+            kerosene_array.append(df_k.copy())
         except:
             print("ERROR",f"historico/historico_combustibles_{fecha}.xlsx")
         # Avanzar al siguiente mes

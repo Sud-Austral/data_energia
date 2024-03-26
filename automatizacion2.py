@@ -116,7 +116,7 @@ def consolidar_anual():
             combustible_array.append(df_c.copy())
             kerosene_array.append(df_k.copy())
         except:
-            print("ERROR")
+            print("ERROR",fecha)
         # Avanzar al siguiente mes
         if fecha_actual.month == 12:
             fecha_actual = datetime.date(fecha_actual.year + 1, 1, 1)

@@ -104,15 +104,15 @@ def consolidar_anual():
     combustible_array = []
     kerosene_array = []
     fecha_inicio = datetime.date(int(datetime.datetime.now().strftime("%Y")), 1, 1)
-    fecha_fin    = datetime.date(int(datetime.datetime.now().strftime("%Y")), 12, 31)
+    fecha_fin    = datetime.datetime.now()
 
     # Generar un ciclo que recorra cada mes
     fecha_actual = fecha_inicio
     while fecha_actual <= fecha_fin:
         fecha = fecha_actual.strftime("%Y-%m")
         try:
-            df_c = pd.read_excel(f"historico/historico_combustibles_{fecha}.xlsx" , index=False)
-            df_k = pd.read_excel(f"historico/kerosene_historico_{fecha}.xlsx" , index=False)
+            df_c = pd.read_excel(f"historico/historico_combustibles_{fecha}.xlsx")
+            df_k = pd.read_excel(f"historico/kerosene_historico_{fecha}.xlsx")
             combustible_array.append(df_c.copy())
             kerosene_array.append(df_k.copy())
         except:

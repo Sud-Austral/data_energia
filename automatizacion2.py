@@ -43,11 +43,11 @@ def proceso():
     df["Longitud"] = df["Longitud"].apply(changeToNumber)
     df.to_csv(f"historico/{hoy}.csv" , index=False)
     try:
-        ref = pd.read_excel(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_{anio}.xlsx")
+        ref = pd.read_excel(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles_{anio}.xlsx")
         df = pd.concat([df,ref])
     except:
         #print("ERROR")
-        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_.csv")
+        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2.csv")
         df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico/historico_combustibles2.csv" , index=False)

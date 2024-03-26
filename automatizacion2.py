@@ -6,12 +6,34 @@ import datetime
 
 #BENCINA EN LÍNEA:
 
+columnasCombustible = ['codigo', 'Razón Social', 'marca', 'nombre_region',
+       'codigo_region', 'nombre_comuna', 'codigo_comuna', 'direccion',
+         'combustible', 'Última Actualización',
+       'hora_actualizacion', 'precio', 'unidad_cobro',
+       'ClasificacionGasolina 93 $/L', 'ClasificacionGasolina 97 $/L',
+       'ClasificacionPetróleo Diesel $/L', 'ClasificacionGasolina 95 $/L',
+       'ClasificacionGLP Vehicular $/m3', 'ClasificacionGNC $/m3', 'Fecha']
+
+columnasKerosene = ['id', 'fecha_hora_actualizacion', 'razon_social', 'direccion_calle',
+       'direccion_numero', 'id_comuna', 'nombre_comuna', 'id_region',
+       'nombre_region', 'horario_atencion', 'distribuidor.nombre',
+       'distribuidor.logo', 'distribuidor.logo_svg',
+       'distribuidor.logo_horizontal_svg', 'precios.kerosene',
+       'metodos_de_pago.efectivo', 'metodos_de_pago.cheque',
+       'metodos_de_pago.tarjetas bancarias',
+       'metodos_de_pago.tarjetas grandes tiendas', 'servicios.tienda',
+       'servicios.farmacia', 'servicios.mantencion', 'servicios.autoservicio',
+       'Clasificacionprecios.kerosene', 'fecha']
+
 def changeToNumber(number):
     try:
         number = number.replace(",",".")
         return round(float(number),6)
     except:
         return number
+
+
+
 
 def proceso():
     url = 'https://3b9x.short.gy/xAW5bI'
@@ -52,7 +74,7 @@ def proceso():
     #df.to_csv("avance.csv", index=False)
     df["Latitud"] = df["Latitud"].apply(changeToNumber)
     df["Longitud"] = df["Longitud"].apply(changeToNumber)
-    df = df.fillna("").drop_duplicates()
+    df = df.fillna("").drop_duplicates(subset=columnasCombustible)
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
     df.to_csv(f"historico/historico_combustibles_{anio}.csv" , index=False)
     df.to_excel("historico/historico_combustibles2.xlsx" , index=False)
@@ -94,7 +116,7 @@ def proceso2():
     df["ubicacion.longitud"] = df["ubicacion.longitud"].apply(changeToNumber)
     df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     #df.to_csv("avance.csv", index=False)
-    df = df.fillna("").drop_duplicates()
+    df = df.fillna("").drop_duplicates(subset=columnasKerosene)
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)
     df.to_csv(f"historico_kerosene/kerosene_historico_{anio}.csv" , index=False)
     df.to_excel("historico_kerosene/kerosene_historico2.xlsx" , index=False)

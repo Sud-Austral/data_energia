@@ -37,21 +37,23 @@ def proceso():
     df['ClasificacionGLP Vehicular $/m3']= "" 
     df['ClasificacionGNC $/m3']= ""
     hoy = str(str(datetime.datetime.today())[0:10])
-    anio = str(str(datetime.datetime.today())[0:4])
+    anio = str(str(datetime.datetime.today())[0:7])
     df['Fecha'] = hoy
     df["Latitud"] = df["Latitud"].apply(changeToNumber)
     df["Longitud"] = df["Longitud"].apply(changeToNumber)
     df.to_csv(f"historico/{hoy}.csv" , index=False)
     try:
-        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_{anio}.csv")
+        ref = pd.read_excel(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_{anio}.xlsx")
         df = pd.concat([df,ref])
     except:
-        print("ERROR")
-        #ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_.csv")
-        #df = pd.concat([df,ref])
+        #print("ERROR")
+        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico/historico_combustibles2_.csv")
+        df = pd.concat([df,ref])
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico/historico_combustibles2.csv" , index=False)
     df.to_csv(f"historico/historico_combustibles_{anio}.csv" , index=False)
+    df.to_excel("historico/historico_combustibles2.xlsx" , index=False)
+    df.to_excel(f"historico/historico_combustibles_{anio}.xlsx" , index=False)
 
     return
 
@@ -74,22 +76,24 @@ def proceso2():
     df.rename(columns = newNames , inplace = True)
     df['Clasificacionprecios.kerosene'] = "" 
     hoy = str(str(datetime.datetime.today())[0:10])
-    anio = str(str(datetime.datetime.today())[0:4])
+    anio = str(str(datetime.datetime.today())[0:7])
     df['fecha'] = hoy
     df["ubicacion.longitud"] = df["ubicacion.longitud"].apply(changeToNumber)
     df["ubicacion.latitud"] = df["ubicacion.latitud"].apply(changeToNumber)
     df.to_csv(f"historico_kerosene/{hoy}.csv" , index=False)
     try:
-        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico_{anio}.csv")
+        ref = pd.read_xlsx(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico_{anio}.xlsx")
         df = pd.concat([df,ref])
     except:
         print("ERROR")
-        #ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
-        #df = pd.concat([df,ref])
+        ref = pd.read_csv(f"https://raw.githubusercontent.com/Sud-Austral/data_energia/main/historico_kerosene/kerosene_historico2.csv")
+        df = pd.concat([df,ref])
 
     #df.to_csv("avance.csv", index=False)
     df.to_csv("historico_kerosene/kerosene_historico2.csv" , index=False)
     df.to_csv(f"historico_kerosene/kerosene_historico_{anio}.csv" , index=False)
+    df.to_excel("historico_kerosene/kerosene_historico2.xlsx" , index=False)
+    df.to_excel(f"historico_kerosene/kerosene_historico_{anio}.xlsx" , index=False)
     return
     
 

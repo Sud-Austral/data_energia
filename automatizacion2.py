@@ -99,10 +99,36 @@ def proceso2():
 
 
 
+def consolidar_anual():
+    anio = datetime.datetime.now().strftime("%Y")
+    combustible_array = []
+    kerosene_array = []
+    fecha_inicio = datetime.date(int(datetime.datetime.now().strftime("%Y")), 1, 1)
+    fecha_fin    = datetime.date(int(datetime.datetime.now().strftime("%Y")), 12, 31)
+
+    # Generar un ciclo que recorra cada mes
+    fecha_actual = fecha_inicio
+    while fecha_actual <= fecha_fin:
+        fecha = fecha_actual.strftime("%Y-%m")
+        try:
+            df_c = pd.read_excel(f"historico/historico_combustibles_{fecha}.xlsx" , index=False)
+            df_k = pd.read_excel(f"historico/kerosene_historico_{fecha}.xlsx" , index=False)
+            combustible_array.append(df_c.copy())
+            kerosene_array.append(df_k.copy())
+        except:
+            print("ERROR")
+        # Avanzar al siguiente mes
+        if fecha_actual.month == 12:
+            fecha_actual = datetime.date(fecha_actual.year + 1, 1, 1)
+        else:
+            fecha_actual = datetime.date(fecha_actual.year, fecha_actual.month + 1, 1)
+    pd.concat(combustible_array).to_excel(f"historico/historico_combustibles_{anio}.xlsx" , index=False)
+    pd.concat(kerosene_array).to_excel(f"historico_kerosene/kerosene_historico_{anio}.xlsx" , index=False)
 
 
 
 if __name__ == '__main__':
     proceso()
     proceso2()
+    consolidar_anual()
     

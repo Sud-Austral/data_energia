@@ -747,7 +747,7 @@ co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén
 co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,95,2024-03-21,14:11:44,1380.0,$/L,,,,,,,2024-03-31
 co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,97,2024-03-21,14:11:44,1448.0,$/L,,,,,,,2024-03-31
 co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,DI,2024-03-21,14:11:44,1069.0,$/L,,,,,,,2024-03-31
-co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,GLP,2024-03-22,07:55:37,651.0,$/m3,,,,,,,2024-03-31
+co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,GLP,2024-03-31,08:59:31,661.0,$/m3,,,,,,,2024-03-31
 co1312203,Comercial Allegro Ltda.,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Tobalaba 11567,-33.478216,-70.558003,GNC,2024-03-22,07:55:37,925.0,$/m3,,,,,,,2024-03-31
 co1312204,Comercial y Servicios Matter Ltda. // 76.177.955-9,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Consistorial 2591,-33.483548,-70.547253,93,2024-03-25,15:00:03,1322.0,$/L,,,,,,,2024-03-31
 co1312204,Comercial y Servicios Matter Ltda. // 76.177.955-9,COPEC,Metropolitana de Santiago,13,Peñalolén,13122,Consistorial 2591,-33.483548,-70.547253,95,2024-03-25,15:00:03,1379.0,$/L,,,,,,,2024-03-31
@@ -3590,17 +3590,17 @@ pb740303,MONTE VERDE SPA. ,Sin Bandera,Del Maule,7,Longaví,7403,Uno Sur 391,-35
 pb740304,FERNANDA  MORENO  SPA,Sin Bandera,Del Maule,7,Longaví,7403,3 poniente 0,-35.962544,-71.680705,93,2023-10-05,15:07:36,1328.0,$/L,,,,,,,2024-03-31
 pb740304,FERNANDA  MORENO  SPA,Sin Bandera,Del Maule,7,Longaví,7403,3 poniente 0,-35.962544,-71.680705,95,2023-10-05,15:07:36,1378.0,$/L,,,,,,,2024-03-31
 pb740304,FERNANDA  MORENO  SPA,Sin Bandera,Del Maule,7,Longaví,7403,3 poniente 0,-35.962544,-71.680705,DI,2023-10-05,15:07:36,1038.0,$/L,,,,,,,2024-03-31
-pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,93,2024-03-28,22:42:21,1340.0,$/L,,,,,,,2024-03-31
-pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,95,2024-03-28,22:42:21,1371.0,$/L,,,,,,,2024-03-31
-pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,DI,2024-03-24,22:19:07,1072.0,$/L,,,,,,,2024-03-31
+pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,93,2024-03-30,22:29:05,1310.0,$/L,,,,,,,2024-03-31
+pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,95,2024-03-30,22:29:05,1341.0,$/L,,,,,,,2024-03-31
+pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,DI,2024-03-30,22:29:05,1042.0,$/L,,,,,,,2024-03-31
 pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,GLP,2012-06-02,14:43:14,452.0,$/m3,,,,,,,2024-03-31
 pb740401,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Ignacio Carrera Pinto 818,-36.147124,-71.826548,GNC,2012-06-02,14:44:47,586.0,$/m3,,,,,,,2024-03-31
 pb740402,Ronald Vega Godoy,Sin Bandera,Del Maule,7,Parral,7404,Avda. Dr. Patricio Blanco 450,-36.144022,-71.834498,93,2023-09-28,13:54:38,1267.0,$/L,,,,,,,2024-03-31
 pb740402,Ronald Vega Godoy,Sin Bandera,Del Maule,7,Parral,7404,Avda. Dr. Patricio Blanco 450,-36.144022,-71.834498,95,2023-09-28,13:54:38,1304.0,$/L,,,,,,,2024-03-31
 pb740402,Ronald Vega Godoy,Sin Bandera,Del Maule,7,Parral,7404,Avda. Dr. Patricio Blanco 450,-36.144022,-71.834498,DI,2023-09-28,13:54:38,1017.0,$/L,,,,,,,2024-03-31
-pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,93,2024-03-28,22:42:21,1340.0,$/L,,,,,,,2024-03-31
-pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,95,2024-03-28,22:42:21,1371.0,$/L,,,,,,,2024-03-31
-pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,DI,2024-03-24,22:19:08,1072.0,$/L,,,,,,,2024-03-31
+pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,93,2024-03-30,22:29:05,1310.0,$/L,,,,,,,2024-03-31
+pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,95,2024-03-30,22:29:05,1341.0,$/L,,,,,,,2024-03-31
+pb740403,COMBUSTIBLES JRB,Combustibles JRB,Del Maule,7,Parral,7404,Avenida Buenos Aires 540,-36.130042,-71.818571,DI,2024-03-30,22:29:05,1042.0,$/L,,,,,,,2024-03-31
 pb740404,Servisur limitada,Sin Bandera,Del Maule,7,Parral,7404,Los Carros s/n 0,-36.147233,-71.815457,93,2023-10-05,12:10:38,1308.0,$/L,,,,,,,2024-03-31
 pb740404,Servisur limitada,Sin Bandera,Del Maule,7,Parral,7404,Los Carros s/n 0,-36.147233,-71.815457,95,2023-10-05,12:10:38,1338.0,$/L,,,,,,,2024-03-31
 pb740404,Servisur limitada,Sin Bandera,Del Maule,7,Parral,7404,Los Carros s/n 0,-36.147233,-71.815457,DI,2023-10-05,12:10:38,1033.0,$/L,,,,,,,2024-03-31
